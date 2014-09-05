@@ -1,0 +1,13 @@
+.feedback1 {
+
+}
+#checkAgain {
+	display: none;
+}
+body{
+	background: url('img/bkgd.jpg');
+}
+form {
+	text-align: center;
+	margin-top: 10em;
+}
