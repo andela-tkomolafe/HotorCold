@@ -23,7 +23,6 @@ isNumberValid = function(){
 	else{
 		compareChoices();
 	}
-
 };
 
 /********************************
@@ -34,29 +33,23 @@ compareChoices = function(){
 		if(prevNumber === 'Nil'){
 
 			if(userChoice === compChoice){
-				$('.feedback1').text("You guessed right!!!");
-			
-			}
-	
+				$('.feedback1').text("You guessed right!!!");			
+			}	
 			else if(userChoice < compChoice){
 				$('.feedback1').text("You are Cold!");
-				 prevNumber = userChoice;
-			 
-			
+				 prevNumber = userChoice;			
 			}
 			else if(userChoice > compChoice){
 			$('.feedback1').text("You are Hot!");
-				 prevNumber = userChoice
-			
+				 prevNumber = userChoice;			
 			}
 		}
 		else {
 			
-			diff1 = Math.abs(prevNumber - compChoice);
+			diff1 = Math.abs(prevNumber - compChoice);	
 			diff2 = Math.abs(userChoice - compChoice);
 			if(userChoice === compChoice){
 				$('.feedback1').text("You guessed right!!!");
-
 			}
 			else if(diff1 > diff2){
 				$('.feedback1').text("You are Hotter!");
@@ -66,37 +59,13 @@ compareChoices = function(){
 				$('.feedback1').text("You are Colder!");
 				prevNumber = userChoice;
 			}
-
-		}
-	
+		}	
 		
 };
 
-
-// check = function(){
-// 	compareChoices();
-
-// };
-// checkAgain = function(){
-// 	isNumberValid();
-// 	diff1 = Math.abs(prevNumber - compChoice);
-// 	diff2 = Math.abs(userChoice - compChoice);
-// 	if(userChoice === compChoice){
-// 		$('.feedback1').text("You guessed right!!!");
-
-// 	}
-// 	else if(diff1 > diff2){
-// 		$('.feedback1').text("You are Hotter!");
-// 		prevNumber = userChoice;
-// 	}
-// 	else if(diff1 < diff2){
-// 		$('.feedback1').text("You are Colder!");
-// 		prevNumber = userChoice;
-// 	}
-
-// };
-
-
+/****************************
+		ACTION ON CLICK
+****************************/
 
 $('#check').click(function(event){
 	event.preventDefault();
@@ -106,9 +75,3 @@ $('#check').click(function(event){
 });
 
 
-// $('#checkAgain').click(function(event){
-// 	event.preventDefault();
-// 	userChoice = parseInt($('#userChoice').val());
-// 	console.log(typeof userChoice);
-// 	checkAgain();
-// });

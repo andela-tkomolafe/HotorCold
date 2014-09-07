@@ -2,20 +2,35 @@
 <html>
 <head>
 	<title>Hot or Cold</title>
-	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="main.css" type="text/css" charset="utf-8" >
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto:400,700,500|Droid+Sans:400,700|Lobster|Pacifico|Quicksand|Crafty+Girls|Changa+One' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
+	<div id="welcome">
+		<h1>Welcome to <span id="hot">Huckle</span> Buckle <span id="cold">Beanstalk</span><h1>
+	</div>
 	<div>
+	<p>We have a number that you need to guess
+	    The closer you get the <span id="hot">Hotter</span> you are.
+		the farther you get the <span id="cold">Colder</span> you are.
+		Pick a number between 0 and 100.
+	</p>
+	</div>
+	<div id="form">
 		<form>
 			<label for "userChoice">Enter a number</label>
 			<input type ="text" id="userChoice" name="user_Choice"><br>
 			<button type = "submit" id="check">Check</button>
-			<!-- <button type ="submit" id="checkAgain">Check again</button> -->
 			<button type = "submit" id="restart" name="restart">New Game</button>
 			<p class="feedback1"></p>
 
 		</form>
-			</div>
+	</div>
+	<footer>
+		<p>&copy; 2014 Tolulope Komolafe.</p>
+	</footer>
 
 </body>
 
