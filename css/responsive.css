@@ -1,0 +1,51 @@
+@media  screen and (max-width: 380px){
+	#welcome{
+		margin-bottom: -2em;
+	}
+
+	form{
+	 width: 20em;
+	 height: 180px;
+	 margin-left: 0.6em;
+	 margin-top: 10px;
+
+	}
+	
+	#check, #restart{
+		margin-top: 0.8em;
+	}
+	#userChoice{
+		height: 3em;
+	}
+}
+
+@media screen and (min-width: 380px) and (max-width: 435px){
+
+	form {
+	width: 23em;
+	height: 200px;
+	margin-top: 20px;
+	margin-left: 1em;
+
+	}
+}
+
+@media screen and (min-width: 436px) and (max-width:510px){
+	form {
+		width:25em;
+		height: 200px;
+		margin-top: 20px;
+		margin-left: 1.2em;
+	}
+}
+
+@media screen and (min-width: 511px) and (max-width: 730px){
+	form{
+		width: 27em;
+		height: 190px;
+		margin-top: 35px;
+		margin-left: 1.2em;
+	}
+
+}
+

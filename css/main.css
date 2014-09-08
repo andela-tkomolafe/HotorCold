@@ -1,0 +1,206 @@
+	/**********************
+		CSS RESET
+	**********************/
+	/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/**************************
+		MAIN CSS
+***************************/
+
+.feedback1 {
+	font-family: 'pacifico' sans-serif;
+	color: blue;
+
+}
+#checkAgain {
+	display: none;
+}
+#welcome {
+	text-align: center;
+}
+
+#welcome h1{
+	margin-top: 1em;
+	font-family: 'pacifico' sans-serif;
+	font-size: 3em;
+	color: #FFFFD4;
+	text-shadow: 1px -1px 4px white, 1px 2px 10px yellow, 1px 10px 20px #ff8000, 2px -18px 40px red;
+}
+
+#hot{
+	color: red;
+}
+#cold{
+	color: blue;
+}
+body{
+	background: url('../img/bkgd2.jpg') no-repeat;
+	background-size: cover;
+	}
+		
+body p{
+	white-space: pre-line;
+	color: black;
+	font-family:'Crafty Girls' sans-serif;
+	font-weight: bold;
+	line-height: 1.5em;
+
+}
+form {
+	border-style: solid;
+	border-radius: 100%;
+	border-color: blue;
+	width: 50%;
+	height: 240px;
+	background: #FABF48;
+	text-align: center;
+	margin-left: 28%;
+	margin-top: -2em;
+	padding-top: 2em;
+	-webkit-transition-duration: 1s;
+}
+form:hover{
+	background: rgba(255,255,255,.2);
+	border: dotted gray;
+	-webkit-transition-property: background,border;
+}
+
+label{
+	margin-left: -10px;
+	margin-right: 5px;
+	padding-right: 5px;
+	font-family: 'pacifico' sans-serif;
+	font-size: 1.5em;
+	font-style: italic;
+	color: #FB8F56;
+}
+#userChoice{
+	border: thin;
+	border-radius: 25%;
+	width: 5em;
+	height: 5em;
+	margin-right: 20px;
+	background: rgba(255,255,255,.5);
+	font-size: large;
+	text-align: center;
+}
+#check, #restart{
+	font-family: 'Crafty Girls' sans-serif;
+	font-weight: bold;
+	border-color: gray;
+	border-width:1px;
+	border-radius: 30%;
+	width: 7em;
+	height: 4em;
+	margin-top: 2em;
+	margin-left: 30px;
+	padding-top: 2px;
+	background: #F05032;
+	-webkit-transition-duration: 1s;
+}
+#check:hover, #restart:hover{
+	background: #6FAB63;
+	-webkit-transition-property: background,border;
+}
+
+#check{
+	color: blue;
+}
+#restart{
+	color: red;
+}
+
+
+
+footer{
+	position: fixed;
+	bottom:0;
+	width: 100%;
+
+	background: rgba(245,246,245,0.6);
+	height: 3em;
+	margin-top: 6em;
+}
+footer p{
+	color: red;
+}
+
+
+
+/*#cloud9 h1 {
+	text-shadow: 0px 0px 10px rgba(255,255,255,0.6), 0px 0px 30px rgba(255,255,255,0.4), 0px 0px 50px rgba(255,255,255,0.3), 0px 0px 180px rgba(255,255,255,0.3);
+	color: rgba(255,255,255,0);
+	font: 80px 'ChunkFiveRegular';
+}*/
+/*#citylights h1 {
+	color: #fff;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff2d95, 0 0 30px #ff2d95, 0 0 40px #ff2d95, 0 0 50px #ff2d95, 0 0 75px #ff2d95;
+	letter-spacing: 5px;
+	font: 80px 'MisoRegular';
+}*/
+
+/*#burning h1 {
+	color: #fff;
+	text-shadow: 0px -1px 4px white, 0px -2px 10px yellow, 0px -10px 20px #ff8000, 0px -18px 40px red;
+	font: 80px 'BlackJackRegular';
+}*/
+
+/*@font-face {
+  font-family: "Kimberley";
+  src: url(http://www.princexml.com/fonts/larabie/ »
+  kimberle.ttf) format("truetype");
+}
+h1 { font-family: "Kimberley", sans-serif */
+
+
+
+
+/*http://www.fonts2u.com/blackjackregular.font*/

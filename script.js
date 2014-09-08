@@ -10,25 +10,24 @@ console.log(compChoice);
 
 var userChoice;
 
-
+var Guess ={
 /**********************************
 	CHECK VALIDITY OF USER CHOICE
 ***********************************/
-isNumberValid = function(){
-	// var userChoice = parseInt($('#userChoice').val());
+isNumberValid: function(){
 	if( isNaN(userChoice) || userChoice === null || userChoice === undefined || userChoice > 100){
 		console.log('not a no.');
 		$('.feedback1').text("You must enter a valid number between 0 and 100");
 	}
 	else{
-		compareChoices();
+		Guess.compareChoices();
 	}
-};
+},
 
 /********************************
 	COMPARE THE CHOICES
 *********************************/
-compareChoices = function(){
+compareChoices: function(){
 		console.log('Inside compareChoices');
 		if(prevNumber === 'Nil'){
 
@@ -61,8 +60,8 @@ compareChoices = function(){
 			}
 		}	
 		
+}
 };
-
 /****************************
 		ACTION ON CLICK
 ****************************/
@@ -71,7 +70,7 @@ $('#check').click(function(event){
 	event.preventDefault();
 	userChoice = parseInt($('#userChoice').val());
 	console.log(typeof userChoice);
-	isNumberValid();
+	Guess.isNumberValid();
 });
 
 
