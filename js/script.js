@@ -75,6 +75,5 @@ $('#check').click(function(event){
 	$('#userChoice').val("");
 	Guess.gaugeProgress();
 });
-});
 
 
