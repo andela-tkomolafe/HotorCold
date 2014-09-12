@@ -42,8 +42,7 @@ isNumberValid: function(){
 					 prevNumber = userChoice;			
 				}
 			}
-			else {
-				
+			else {				
 				diff1 = Math.abs(prevNumber - compChoice);	
 				diff2 = Math.abs(userChoice - compChoice);
 				if(userChoice === compChoice){
