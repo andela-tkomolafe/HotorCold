@@ -9,8 +9,7 @@ var compChoice = Math.floor(Math.random() * 100);
 console.log(compChoice);
 
 var userChoice;
-
-var Guess ={
+var Guess = {
 /**********************************
 	CHECK VALIDITY OF USER CHOICE
 ***********************************/
